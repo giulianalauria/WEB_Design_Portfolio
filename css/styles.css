@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,300;1,500;1,900&display=swap');
+
+
+nav {
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+body {
+    background-color: rgb(244, 244, 244);
+    color: rgb(0, 0, 0);
+    font-family: Roboto;
+}
+
+h3 {
+    font-weight: 300;
+    font-style: italic;
+}
+
+
+h1 {
+    font-weight: 500;
+    font-size: 50px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: 0s 2s;
+}
+
+h2 {
+    font-weight: 300;
+}
+
+
+h1:hover {
+    color: grey;
+    font-size: 85px;
+}
+
+.row {
+    margin-top: 100px;
+}
+
+.text {
+    margin-top: 30px;
+}
+
+.col-12 {
+    height: 80vh;
+    margin-bottom: 30px;
+}
+
+.row div {
+    margin-bottom: 45px;
+
+
+}
+
+img {
+    object-fit: fill;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+}
+
+
+.marquee {
+    width: 100%;
+    height: 3px;
+
+}
+
+.marquee li {
+    font-size: 18px;
+    color: white;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.marquee__content {
+    display: flex;
+    margin-top: 15px;
+    animation: scrolling 8s linear infinite;
+}
+
+.marquee__item {
+    flex-shrink: 0;
+}
+
+form {
+    width: 100%;
+}
+
+
+input, textarea {
+
+    width: 100%;
+    height: 30px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+textarea {
+    resize: none;
+    height: 200px;
+}
+
+button {
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    height: 30px;
+
+}
+
+
+
+@keyframes scrolling {
+    0% {
+        transform: translateX(0)
+    }
+
+    100% {
+        transform: translateX(-100%)
+    }
+}
+
+
+@media(max-width:992px) {
+    .col-lg-4 {
+        width: 100%;
+    }
+
+
+    .me {
+        display: none;
+        width: 10%
+    }
+
+    h1:hover {
+        color: grey;
+        font-size: 70px;
+    }
+
+    input, textarea {
+        width: 400px;
+        height: 30px;
+        display: block;
+        margin-left: 90px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 400px;
+        height: 30px;
+        display: block;
+        margin-left: 90px;
+        margin-bottom: 10px;
+    }
+
+    .navbar-toggler {
+        width: 50px;
+
+    }
+
+    .navbar-toggler-icon {
+        width: 20px;
+        height: 22px;
+    }
+
+}
+
+@media(min-width:992px) {
+    .col-lg-4 {
+        width: 32%;
+    }
+
+}
